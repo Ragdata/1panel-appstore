@@ -117,13 +117,14 @@ work_dir="/opt/1panel_helper"
 
 Simply paste the application source address, below, into the `git_repo_url` variable above: 
 
-|                                          Repository | Description                          |
-|----------------------------------------------------:|:-------------------------------------|
-|              https://github.com/1Panel-dev/appstore | Official 1Panel Appstore Repository  |
-|          https://github.com/Ragdata/1panel-appstore | Ragdata's 1Panel Appstore Repository |
-|          https://github.com/qwenode/1panel-appstore | Qwenode's 1Panel Appstore Repository |
-|                  https://github.com/okxlin/appstore | Okxlin's 1Panel Appstore Repository  |
-| https://github.com/xxxily/local-appstore-for-1Panel | 1Panel Appstore Template             |
+|                                          Repository | Description                            |
+|----------------------------------------------------:|:---------------------------------------|
+|              https://github.com/1Panel-dev/appstore | Official 1Panel Appstore Repository    |
+|          https://github.com/Ragdata/1panel-appstore | Ragdata's 1Panel Appstore Repository   |
+|          https://github.com/qwenode/1panel-appstore | Qwenode's 1Panel Appstore Repository   |
+|                  https://github.com/okxlin/appstore | Okxlin's 1Panel Appstore Repository    |
+|        https://github.com/arch3rPro/1Panel-Appstore | arch3rPro's 1Panel Appstore Repository |
+| https://github.com/xxxily/local-appstore-for-1Panel | 1Panel Appstore Template               |
 
  [`^ Top`](#top)
 
