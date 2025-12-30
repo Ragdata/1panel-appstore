@@ -47,7 +47,7 @@
 
 ## [Installation](#top) 📂
 
-> [!info]
+> [!note]
 > Add `local_appstore_sync_helper.sh` to a 1Panel scheduled task to run it periodically and automatically synchronize applications in this repository to your 1Panel Local Appstore.
 
 [`^ Top`](#top)
