@@ -100,18 +100,18 @@ work_dir="/opt/1panel_helper"
 ### [Configuration Details](#top)
 
 |                     Item | Required? | Instructions                                                          |
-|-------------------------:| :---: |:----------------------------------------------------------------------|
-|          `app_local_dir` | No | Location of the 1Panel Local App Directory (required if not default)  |
-|           `git_repo_url` | Yes | Appstore Git Repository Address                                       |
-|       `git_access_token` | No | GitHub Access Token                                                   |
-|           `git_username` | No | Username for accessing the Git Repository                             |
-|           `git_password` | No | Password for accessing the Git Repository                             |
-|             `git_branch` | No | Specify the branch to clone                                           |
-|              `git_depth` | No | Specify the depth of the clone                                        |
-|        `clean_local_app` | No | Should the local app directory be cleared before cloning?             |
-| `clean_remote_app_cache` | No | Should the remote app cache be cleared before cloning?                |
-|               `proxyUrl` | No | Configure the agent used when cloning or pulling a remote repository  |
-|               `work_dir` | No | Specify the working directory for cloning the remote Appstore project |
+|-------------------------:|:---------:|:----------------------------------------------------------------------|
+|          `app_local_dir` |    No     | Location of the 1Panel Local App Directory (required if not default)  |
+|           `git_repo_url` |    Yes    | Appstore Git Repository Address                                       |
+|       `git_access_token` |    No     | GitHub Access Token                                                   |
+|           `git_username` |    No     | Username for accessing the Git Repository                             |
+|           `git_password` |    No     | Password for accessing the Git Repository                             |
+|             `git_branch` |    No     | Specify the branch to clone                                           |
+|              `git_depth` |    No     | Specify the depth of the clone                                        |
+|        `clean_local_app` |    No     | Should the local app directory be cleared before cloning?             |
+| `clean_remote_app_cache` |    No     | Should the remote app cache be cleared before cloning?                |
+|               `proxyUrl` |    No     | Configure the agent used when cloning or pulling a remote repository  |
+|               `work_dir` |    No     | Specify the working directory for cloning the remote Appstore project |
  
 ### [1Panel Appstore Repositories](#top)
 
