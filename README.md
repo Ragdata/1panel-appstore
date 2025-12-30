@@ -34,6 +34,8 @@
 
 ## [Requirements](#top) ❓
 
+- Running instance of 1Panel 1.0.0 or higher
+
 ## [Features](#top) ✨
 
 - 1-click update and synchronization of 1Panel's Official Appstore applications to your local environment
@@ -54,8 +56,76 @@
 
 ## [Configuration](#top) 🚧
 
+`local_appstore_sync_helper.sh` contains several configurations options that can be modified to suit your needs:
 
-[`^ Top`](#top)
+```bash
+# Location of the 1Panel Local App Directory (this directory needs to be specified if not default):
+app_local_dir="/opt/1panel/resource/apps/local"
+
+# Appstore Git Repository Address (required):
+git_repo_url="https://github.com/Ragdata/1panel-appstore.git"
+# Official 1Panel Appstore Repository URL:
+# git_repo_url="https://github.com/1Panel-dev/appstore"
+
+# GitHub Access Token (optional):
+# Using Access Tokens is recommended to reduce the risk of password leaks
+git_access_token=""
+
+# Username for accessing the Git Repository; Optional when accessing private repositories:
+git_username=""
+# Password for accessing the Git Repository; Optional when accessing private repositories:
+git_password=""
+
+# Specify the branch to clone (optional):
+git_branch="master"
+# Specify the depth of the clone (optional):
+git_depth=1
+
+# Should the local app directory be cleared before cloning? (optional):
+clean_local_app=false
+# Should the remote app cache be cleared before cloning? (optional):
+clean_remote_app_cache=false
+
+# Configure the agent used when cloning or pulling a remote repository (optional):
+proxyUrl=""
+# Examples:
+# proxyUrl="http://127.0.0.1:7890"
+# proxyUrl="socks5://127.0.0.1:7890"
+# proxyUrl="socks5://user:password@host:port"
+
+# Clone the remote Appstore project to your local working directory:
+work_dir="/opt/1panel_helper"
+```
+
+### [Configuration Details](#top)
+
+|                     Item | Required? | Instructions                                                          |
+|-------------------------:| :---: |:----------------------------------------------------------------------|
+|          `app_local_dir` | No | Location of the 1Panel Local App Directory (required if not default)  |
+|           `git_repo_url` | Yes | Appstore Git Repository Address                                       |
+|       `git_access_token` | No | GitHub Access Token                                                   |
+|           `git_username` | No | Username for accessing the Git Repository                             |
+|           `git_password` | No | Password for accessing the Git Repository                             |
+|             `git_branch` | No | Specify the branch to clone                                           |
+|              `git_depth` | No | Specify the depth of the clone                                        |
+|        `clean_local_app` | No | Should the local app directory be cleared before cloning?             |
+| `clean_remote_app_cache` | No | Should the remote app cache be cleared before cloning?                |
+|               `proxyUrl` | No | Configure the agent used when cloning or pulling a remote repository  |
+|               `work_dir` | No | Specify the working directory for cloning the remote Appstore project |
+ 
+### [1Panel Appstore Repositories](#top)
+
+Simply paste the application source address, below, into the `git_repo_url` variable above: 
+
+|                                          Repository | Description                          |
+|----------------------------------------------------:|:-------------------------------------|
+|              https://github.com/1Panel-dev/appstore | Official 1Panel Appstore Repository  |
+|          https://github.com/Ragdata/1panel-appstore | Ragdata's 1Panel Appstore Repository |
+|          https://github.com/qwenode/1panel-appstore | Qwenode's 1Panel Appstore Repository |
+|                  https://github.com/okxlin/appstore | Okxlin's 1Panel Appstore Repository  |
+| https://github.com/xxxily/local-appstore-for-1Panel | 1Panel Appstore Template             |
+
+ [`^ Top`](#top)
 
 ## [Resources](#top) 📖
 
