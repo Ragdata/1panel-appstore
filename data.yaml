@@ -1,0 +1,181 @@
+name: 1Panel
+title: A new generation of Linux server management panel
+additionalProperties:
+  tags:
+    - key: Website
+      name: Website
+      sort: 10
+      locales:
+        en: "Website"
+        ja: "ウェブサイト"
+        ms: "Laman Web"
+        pt-br: "Website"
+        ru: "Веб-сайт"
+        zh-hant: "網站"
+        zh: "建站"
+    - key: Database
+      name: Database
+      sort: 20
+      locales:
+        en: "Database"
+        ja: "データベース"
+        ms: "Pangkalan Data"
+        pt-br: "Banco de Dados"
+        ru: "База данных"
+        zh-hant: "資料庫"
+        zh: "数据库"
+    - key: Server
+      name: Web Server
+      sort: 30
+      locales:
+        en: "Web Server"
+        ja: "ウェブサーバー"
+        ms: "Pelayan Web"
+        pt-br: "Servidor Web"
+        ru: "Веб-сервер"
+        zh-hant: "網頁伺服器"
+        zh: "Web 服务器"
+    - key: Runtime
+      name: Runtime
+      sort: 40
+      locales:
+        en: "Runtime"
+        ja: "ランタイム"
+        ms: "Masa Jalan"
+        pt-br: "Tempo de Execução"
+        ru: "Среда выполнения"
+        zh-hant: "運行環境"
+        zh: "运行环境"
+    - key: Tool
+      name: 实用工具
+      sort: 50
+      locales:
+        en: "Tool"
+        ja: "ツール"
+        ms: "Alat"
+        pt-br: "Ferramenta"
+        ru: "Инструмент"
+        zh-hant: "實用工具"
+        zh: "实用工具"
+    - key: Storage
+      name: Storage
+      sort: 60
+      locales:
+        en: "Cloud Storage"
+        ja: "クラウドストレージ"
+        ms: "Penyimpanan Awan"
+        pt-br: "Armazenamento em Nuvem"
+        ru: "Облачное хранилище"
+        zh-hant: "雲存儲"
+        zh: "云存储"
+    - key: AI
+      name: AI / LLM
+      sort: 70
+      locales:
+        en: "AI / Large Models"
+        ja: "AI / 大規模モデル"
+        ms: "AI / Model Besar"
+        pt-br: "IA / Grandes Modelos"
+        ru: "ИИ / Большие модели"
+        zh-hant: "AI / 大模型"
+        zh: "AI / 大模型"
+    - key: BI
+      name: BI
+      sort: 80
+      locales:
+        en: "BI"
+        ja: "BI"
+        ms: "BI"
+        pt-br: "BI"
+        ru: "BI"
+        zh-hant: "BI"
+        zh: "BI"
+    - key: Security
+      name: Security
+      sort: 90
+      locales:
+        en: "Security"
+        ja: "セキュリティ"
+        ms: "Keselamatan"
+        pt-br: "Segurança"
+        ru: "Безопасность"
+        zh-hant: "安全"
+        zh: "安全"
+    - key: DevTool
+      name: DevTool
+      sort: 100
+      locales:
+        en: "Development Tool"
+        ja: "開発ツール"
+        ms: "Alat Pembangunan"
+        pt-br: "Ferramenta de Desenvolvimento"
+        ru: "Инструмент разработки"
+        zh-hant: "開發工具"
+        zh: "开发工具"
+    - key: DevOps
+      name: DevOps
+      sort: 110
+      locales:
+        en: "DevOps"
+        ja: "DevOps"
+        ms: "DevOps"
+        pt-br: "DevOps"
+        ru: "DevOps"
+        zh-hant: "DevOps"
+        zh: "DevOps"
+    - key: Middleware
+      name: Middleware
+      sort: 120
+      locales:
+        en: "Middleware"
+        ja: "ミドルウェア"
+        ms: "Middleware"
+        pt-br: "Middleware"
+        ru: "Промежуточное ПО"
+        zh-hant: "中間件"
+        zh: "中间件"
+    - key: Media
+      name: Media
+      sort: 130
+      locales:
+        en: "Media"
+        ja: "メディア"
+        ms: "Media"
+        pt-br: "Mídia"
+        ru: "Медиа"
+        zh-hant: "多媒體"
+        zh: "多媒体"
+    - key: Email
+      name: Email
+      sort: 140
+      locales:
+        en: "Email Service"
+        ja: "メールサービス"
+        ms: "Perkhidmatan E-mel"
+        pt-br: "Serviço de Email"
+        ru: "Почтовый сервис"
+        zh-hant: "郵件服務"
+        zh: "邮件服务"
+    - key: Game
+      name: Game
+      sort: 150
+      locales:
+        en: "Casual Games"
+        ja: "カジュアルゲーム"
+        ms: "Permainan Santai"
+        pt-br: "Jogos Casuais"
+        ru: "Казуальные игры"
+        zh-hant: "休閒遊戲"
+        zh: "休闲游戏"
+    - key: Local
+      name: Local
+      sort: 9999
+      locales:
+        en: "Local"
+        ja: "ローカル"
+        ms: "Tempatan"
+        pt-br: "Local"
+        ru: "Локальный"
+        zh-hant: "本地"
+        zh: "本地"
+  version: v1.6.0
