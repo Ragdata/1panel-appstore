@@ -123,6 +123,7 @@ Simply paste the application source address, below, into the `git_repo_url` vari
 |          https://github.com/Ragdata/1panel-appstore | Ragdata's 1Panel Appstore Repository   |
 |          https://github.com/qwenode/1panel-appstore | Qwenode's 1Panel Appstore Repository   |
 |                  https://github.com/okxlin/appstore | Okxlin's 1Panel Appstore Repository    |
+|           https://github.com/maywzh/1panel-appstore | Maywzh's 1Panel Appstore Repository    |
 |        https://github.com/arch3rPro/1Panel-Appstore | arch3rPro's 1Panel Appstore Repository |
 | https://github.com/xxxily/local-appstore-for-1Panel | 1Panel Appstore Template               |
 
