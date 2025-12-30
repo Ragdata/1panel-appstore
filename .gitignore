@@ -10,5 +10,6 @@ todo.txt
 **/.env
 **/.env.*
 !**/.env.dist
+!**/.env.sample
 
 config.yml
