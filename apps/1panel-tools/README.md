@@ -9,10 +9,13 @@
 
 # [1Panel-Tools](https://github.com/arch3rPro/1Panel-Tools)
 
-## [Links](#top) 🔗
+<center>
 
-#### GitHub: https://github.com/arch3rPro/1Panel-Tools
-#### Docker Image: https://hub.docker.com/r/vuldocker/1panel-tools
+### _A specialized toolkit to simplify the packaging of apps for the 1Panel AppStore_
+
+#### [GITHUB](https://github.com/arch3rPro/1Panel-Tools)&nbsp;&nbsp;🔸&nbsp;&nbsp;[IMAGE](https://hub.docker.com/r/vuldocker/1panel-tools)
+
+</center>
 
 ## [Overview](#top) 🚩
 
@@ -59,6 +62,12 @@ The converter generates files following the 1Panel AppStore format:
 
 [`^ Top`](#top)
 
+## [License](#top) ⚖️
+
+[![GPLv3 License][github-license-badge]][license-link]
+
+[`^ Top`](#top)
+
 [docker-pulls-badge]: https://img.shields.io/docker/pulls/vuldocker/1panel-tools?labelColor=31383f
 [docker-size-badge]: https://img.shields.io/docker/image-size/vuldocker/1panel-tools?labelColor=31383f
 [docker-stars-badge]: https://img.shields.io/docker/stars/vuldocker/1panel-tools?style=social
@@ -66,3 +75,6 @@ The converter generates files following the 1Panel AppStore format:
 [github-issues-badge]: https://img.shields.io/github/issues/arch3rPro/1Panel-Tools?labelColor=31383f
 [github-last-commit-badge]: https://img.shields.io/github/last-commit/arch3rPro/1Panel-Tools?labelColor=31383f
 [github-stars-badge]: https://img.shields.io/github/stars/arch3rPro/1Panel-Tools
+[github-license-badge]: https://img.shields.io/badge/License-GPLv3-blue?labelColor=31383f&style=flat-square
+
+[license-link]: https://choosealicense.com/licenses/gpl-3.0/

@@ -9,12 +9,13 @@
 
 # [1Panel (Docker Version)](https://github.com/okxlin/docker-1panel)
 
-## [Links](#top) 🔗
+<center>
 
-#### Website: https://1panel.pro/
-#### Documentation: https://docs.1panel.pro/
-#### GitHub: https://github.com/okxlin/docker-1panel
-#### Docker Image: https://hub.docker.com/r/moelin/1panel 
+### _A new generation Linux server operation and maintenance management panel_
+
+### [SITE](https://1panel.pro/)&nbsp;&nbsp;🔸&nbsp;&nbsp;[DOCS](https://docs.1panel.pro/)&nbsp;&nbsp;🔸&nbsp;&nbsp;[GITHUB](https://github.com/okxlin/docker-1panel)&nbsp;&nbsp;🔸&nbsp;&nbsp;[IMAGE](https://hub.docker.com/r/moelin/1panel)
+
+</center>
 
 ## [Features](#top) ✨
 
@@ -109,14 +110,9 @@ Then `docker-compose up -d`
 
 ## [License](#top) ⚖️
 
+[![GPLv3 License][github-license-badge]][license-link]
+
 Copyright (c) 2014-2023 [FIT2CLOUD 飞致云](https://fit2cloud.com/), All rights reserved.
-
-Licensed under The GNU General Public License version 3 (GPLv3)  (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
-
-<https://www.gnu.org/licenses/gpl-3.0.html>
-
-Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
-
 
 [docker-pulls-badge]: https://img.shields.io/docker/pulls/moelin/1panel?labelColor=31383f
 [docker-size-badge]: https://img.shields.io/docker/image-size/moelin/1panel?labelColor=31383f
@@ -125,3 +121,8 @@ Unless required by applicable law or agreed to in writing, software distributed 
 [github-issues-badge]: https://img.shields.io/github/issues/okxlin/docker-1panel?labelColor=31383f
 [github-last-commit-badge]: https://img.shields.io/github/last-commit/okxlin/docker-1panel?labelColor=31383f
 [github-stars-badge]: https://img.shields.io/github/stars/okxlin/docker-1panel
+[github-license-badge]: https://img.shields.io/badge/License-GPLv3-blue?labelColor=31383f&style=flat-square
+
+[license-link]: https://choosealicense.com/licenses/gpl-3.0/
+
+[//]: # ([github-license-badge]: https://img.shields.io/github/license/okxlin/docker-1panel)
