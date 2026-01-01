@@ -66,7 +66,11 @@ Modify the values of the environment file there:
 cp .env.sample .env && nano .env
 ```
 
+Set permissions and run the script:
 
+```bash
+chmod +x local_appstore_sync_helper.sh && ./local_appstore_sync_helper.sh
+```
 
 > [!note]
 > Add `local_appstore_sync_helper.sh` to a 1Panel scheduled task to run it periodically and automatically synchronize applications in this repository to your 1Panel Local Appstore.
