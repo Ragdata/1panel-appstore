@@ -1,27 +1,32 @@
 #!/bin/bash
 # Just run or copy this script to the 1Panel -> scheduled task to run it regularly
-
+if [ -f "./.env" ]; then
+	set -o allexport
+	source "./.env"
+	set +o allexport
+fi
 # Directory of the local app (if not installed by default, you need to create it manually)
 app_local_dir="/opt/1panel/resource/apps/local"
 
 # Appstore git repository URL (required)
 # git_repo_url="https://github.com/xxxily/local-appstore-for-1Panel"
-#git_repo_url="https://github.com/okxlin/appstore"
-git_repo_url="https://github.com/qwenode/1panel-appstore"
+# git_repo_url="https://github.com/okxlin/appstore"
+# git_repo_url="https://github.com/qwenode/1panel-appstore"
+git_repo_url="${GIT_REPO_URL:-'https://github.com/Ragdata/1panel-appstore'}"
 
 # Access token for the git repository (optional)
 # Using an access token is recommended to reduce the risk of leaking account secrets
-git_access_token=""
+git_access_token="${GIT_ACCESS_TOKEN:-}"
 
 # Username for accessing the git repository, used for private repositories (optional)
-git_username=""
+git_username="${GIT_USERNAME:-}"
 # Password for accessing the git repository, used for private repositories (optional)
-git_password=""
+git_password="${GIT_PASSWORD:-}"
 
 # Specify the branch to clone (optional)
-git_branch=""
+git_branch="${GIT_BRANCH:-'master'}"
 # Specify the clone depth (optional, default is 1 for shallow clone)
-git_depth=1
+git_depth=${GIT_DEPTH:-1}
 
 # Whether to empty the local app directory before pulling the remote repository (optional)
 clean_local_app=false
@@ -29,14 +34,14 @@ clean_local_app=false
 clean_remote_app_cache=false
 
 # Setup an agent to use when pulling the remote repository (optional)
-proxyUrl=""
+proxyUrl=${PROXY_URL:-}
 # Example setup:
 # proxyUrl="http://127.0.0.1:7890"
 # proxyUrl="socks5://127.0.0.1:7890"
 # proxyUrl="socks5://user:password@host:port"
 
 # Clone a remote Appstore project to a local working directory
-work_dir="/opt/1panel_hepler"
+work_dir=${WORK_DIR:-"/opt/1panel"}
 
 set -e
 
@@ -83,16 +88,17 @@ function url_encode() {
 replace_protocol() {
   local url=$1
   local replacement=$2
+  local new_url
 
-  # If no remplacement is provided, remove the protocol part
+  # If no replacement is provided, remove the protocol part
   if [[ -z $replacement ]]; then
-    local new_url=$(echo $url | sed "s/http:\/\///" | sed "s/https:\/\///")
+    new_url=$(echo "$url" | sed "s/http:\/\///" | sed "s/https:\/\///")
   else
-    local new_url=$(echo $url | sed "s/http:\/\//${replacement}/" | sed "s/https:\/\//${replacement}/")
+    new_url=$(echo "$url" | sed "s/http:\/\//${replacement}/" | sed "s/https:\/\//${replacement}/")
   fi
 
   # 输出替换后的URL
-  echo $new_url
+  echo "$new_url"
 }
 
 # Function: clone_git_repo
@@ -110,6 +116,7 @@ function clone_git_repo() {
   local access_token=$4
   local branch=$5
   local depth=$6
+  local fix_url, encoded_username, encoded_password
 
   branch=${branch:+--branch $branch}
   depth=${depth:+--depth $depth}
@@ -118,20 +125,20 @@ function clone_git_repo() {
 
   if [[ -n $access_token ]]; then
     echo "use access_token to clone"
-    local fix_url=$(replace_protocol "$url")
-    git clone "https://oauth2:$access_token@$fix_url" $branch $depth
+    fix_url=$(replace_protocol "$url")
+    git clone "https://oauth2:$access_token@$fix_url" "$branch" "$depth"
   elif [[ -n $username && -n $password ]]; then
-    local encoded_username=$(url_encode "$username")
-    local encoded_password=$(url_encode "$password")
-    local fix_url=$(replace_protocol "$url")
+    encoded_username=$(url_encode "$username")
+    encoded_password=$(url_encode "$password")
+    fix_url=$(replace_protocol "$url")
 
     # echo "use username and password to clone, encoded_username: $encoded_username, encoded_password: $encoded_password, fix_url: $fix_url"
     echo "use username and password to clone"
 
-    git clone "https://$encoded_username:$encoded_password@$fix_url" $branch $depth
+    git clone "https://$encoded_username:$encoded_password@$fix_url" "$branch" "$depth"
   else
     echo "use default clone"
-    git clone "$url" $branch $depth
+    git clone "$url" "$branch" "$depth"
   fi
 }
 
@@ -246,7 +253,7 @@ function main() {
 
   # The value of the clean_local_app variable decides whether to clear the local app directory
   if [ "$clean_local_app" = true ]; then
-    rm -rf "$app_local_dir"/*
+    rm -rf "${app_local_dir:?}"/*
     logs "The local app directory has been cleared"
   fi
 
