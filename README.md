@@ -1,6 +1,5 @@
 <a name="top" href="https://github.com/ragdata" target="_blank"><img height="100" align="right" src="https://raw.githubusercontent.com/Ragdata/media/master/logo/Ragdata-64.svg" alt="1Panel-Appstore" /></a>
 
-<!-- [![Codacy grade][codacy-grade]][codacy-repo] -->
 ![Pre-Release][pre-release]
 [![Version][version-badge]][release]
 
@@ -48,6 +47,26 @@
 [`^ Top`](#top)
 
 ## [Installation](#top) 📂
+
+Clone this repository to a local directory on your 1Panel server:
+
+```bash
+git clone https://github.com/ragdata/1panel-appstore.git
+````
+
+Go to the root directory of the cloned repository:
+
+```bash
+cd 1panel-appstore
+```
+
+Modify the values of the environment file there:
+
+```bash
+cp .env.sample .env && nano .env
+```
+
+
 
 > [!note]
 > Add `local_appstore_sync_helper.sh` to a 1Panel scheduled task to run it periodically and automatically synchronize applications in this repository to your 1Panel Local Appstore.
