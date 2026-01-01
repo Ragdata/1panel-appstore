@@ -9,13 +9,13 @@
 
 # [Stash](https://github.com/stashapp/stash)
 
-<center>
+<div align="center">
 
 ### _A media management tool for your collection of video and image files_
 
 ### [SITE](https://stashapp.cc/)&nbsp;&nbsp;🔸&nbsp;&nbsp;[DOCS](https://docs.stashapp.cc/)&nbsp;&nbsp;🔸&nbsp;&nbsp;[GITHUB](https://github.com/stashapp/stash)&nbsp;&nbsp;🔸&nbsp;&nbsp;[IMAGE](https://hub.docker.com/r/stashapp/stash)
 
-</center>
+</div>
 
 ## [Overview](#top) 🚩
 
