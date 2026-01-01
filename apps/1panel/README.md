@@ -70,6 +70,9 @@ Execute the following command to install 1Panel with one click:
 ```sh
 curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_start.sh && sudo bash quick_start.sh
 ```
+
+[`^ Top`](#top)
+
 ## [Install with Docker](#top) 🐋
 
 ```bash
