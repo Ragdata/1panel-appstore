@@ -9,13 +9,13 @@
 
 # [1Panel-Tools](https://github.com/arch3rPro/1Panel-Tools)
 
-<center>
+<div align="center">
 
 ### _A specialized toolkit to simplify the packaging of apps for the 1Panel AppStore_
 
-#### [GITHUB](https://github.com/arch3rPro/1Panel-Tools)&nbsp;&nbsp;🔸&nbsp;&nbsp;[IMAGE](https://hub.docker.com/r/vuldocker/1panel-tools)
+### [GITHUB](https://github.com/arch3rPro/1Panel-Tools)&nbsp;&nbsp;🔸&nbsp;&nbsp;[IMAGE](https://hub.docker.com/r/vuldocker/1panel-tools)
 
-</center>
+</div>
 
 ## [Overview](#top) 🚩
 

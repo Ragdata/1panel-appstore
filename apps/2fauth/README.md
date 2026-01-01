@@ -9,13 +9,13 @@
 
 # [2FAuth](https://github.com/Bubka/2FAuth)
 
-<center>
+<div align="center">
 
 ### _A web app to manage your Two-Factor Authentication (2FA) accounts_
 
 ### [DOCS](https://docs.2fauth.app/)&nbsp;&nbsp;🔸&nbsp;&nbsp;[GITHUB](https://github.com/Bubka/2FAuth)&nbsp;&nbsp;🔸&nbsp;&nbsp;[IMAGE](https://hub.docker.com/r/2fauth/2fauth)
 
-</center>
+</div>
 
 ## [Overview](#top) 🚩
 

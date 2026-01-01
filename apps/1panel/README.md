@@ -9,13 +9,13 @@
 
 # [1Panel (Docker Version)](https://github.com/okxlin/docker-1panel)
 
-<center>
+<div align="center">
 
 ### _A new generation Linux server operation and maintenance management panel_
 
 ### [SITE](https://1panel.pro/)&nbsp;&nbsp;🔸&nbsp;&nbsp;[DOCS](https://docs.1panel.pro/)&nbsp;&nbsp;🔸&nbsp;&nbsp;[GITHUB](https://github.com/okxlin/docker-1panel)&nbsp;&nbsp;🔸&nbsp;&nbsp;[IMAGE](https://hub.docker.com/r/moelin/1panel)
 
-</center>
+</div>
 
 ## [Features](#top) ✨
 
