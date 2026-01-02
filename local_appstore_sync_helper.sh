@@ -12,7 +12,7 @@ app_local_dir="/opt/1panel/resource/apps/local"
 # git_repo_url="https://github.com/xxxily/local-appstore-for-1Panel"
 # git_repo_url="https://github.com/okxlin/appstore"
 # git_repo_url="https://github.com/qwenode/1panel-appstore"
-git_repo_url="${GIT_REPO_URL:-'https://github.com/Ragdata/1panel-appstore'}"
+git_repo_url="${GIT_REPO_URL:-https://github.com/Ragdata/1panel-appstore.git}"
 
 # Access token for the git repository (optional)
 # Using an access token is recommended to reduce the risk of leaking account secrets
