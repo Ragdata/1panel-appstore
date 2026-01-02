@@ -117,8 +117,8 @@ function clone_git_repo() {
   local depth=$6
   local fix_url encoded_username encoded_password
 
-  branch=${branch:+--branch $branch}
-  depth=${depth:+--depth $depth}
+  branch=${branch:---branch $branch}
+  depth=${depth:---depth $depth}
 
   echo "branch: $branch, depth: $depth"
 
