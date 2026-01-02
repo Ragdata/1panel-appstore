@@ -51,8 +51,8 @@ logs() {
   local message="$1"
 
   if [ -n "$log_file" ]; then
-    mkdir -p "$(dirname "$log_file")"
-    if [ $? -eq 0 ]; then
+    if mkdir -p "$(dirname "$log_file")"; then
+    #if [ $? -eq 0 ]; then
       echo -e "[$(date +"%Y-%m-%d %H:%M:%S")] $message"
       echo "[$(date +"%Y-%m-%d %H:%M:%S")] $message" >>"$log_file"
       return
@@ -97,7 +97,6 @@ replace_protocol() {
     new_url=$(echo "$url" | sed "s/http:\/\//${replacement}/" | sed "s/https:\/\//${replacement}/")
   fi
 
-  # 输出替换后的URL
   echo "$new_url"
 }
 
@@ -116,7 +115,7 @@ function clone_git_repo() {
   local access_token=$4
   local branch=$5
   local depth=$6
-  local fix_url, encoded_username, encoded_password
+  local fix_url encoded_username encoded_password
 
   branch=${branch:+--branch $branch}
   depth=${depth:+--depth $depth}
