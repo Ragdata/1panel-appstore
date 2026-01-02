@@ -125,7 +125,7 @@ function clone_git_repo() {
   if [[ -n $access_token ]]; then
     echo "use access_token to clone"
     fix_url=$(replace_protocol "$url")
-    git clone "https://oauth2:$access_token@$fix_url" "$branch" "$depth"
+    git clone "$branch" "$depth" "https://oauth2:$access_token@$fix_url"
   elif [[ -n $username && -n $password ]]; then
     encoded_username=$(url_encode "$username")
     encoded_password=$(url_encode "$password")
@@ -134,10 +134,10 @@ function clone_git_repo() {
     # echo "use username and password to clone, encoded_username: $encoded_username, encoded_password: $encoded_password, fix_url: $fix_url"
     echo "use username and password to clone"
 
-    git clone "https://$encoded_username:$encoded_password@$fix_url" "$branch" "$depth"
+    git clone "$branch" "$depth" "https://$encoded_username:$encoded_password@$fix_url"
   else
     echo "use default clone"
-    git clone "$url" "$branch" "$depth"
+    git clone "$branch" "$depth" "$url"
   fi
 }
 
