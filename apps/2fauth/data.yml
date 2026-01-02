@@ -1,5 +1,6 @@
 name: 2FAuth
 tags:
+  - Local
   - Security
 title: Open source two-factor authentication manager
 description: Open source two-factor authentication manager
@@ -7,6 +8,7 @@ additionalProperties:
   key: 2fauth
   name: 2FAuth
   tags:
+    - Local
     - Security
   shortDescZh: 开源双因素认证管理器
   shortDescEn: Open-source two-factor authentication manager

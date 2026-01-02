@@ -1,5 +1,6 @@
 name: 1Panel
 tags:
+  - Local
   - Tool
 title: A modern, open-source Linux server management panel
 description: A modern, open-source Linux server management panel
@@ -7,6 +8,7 @@ additionalProperties:
   key: 1panel
   name: 1Panel
   tags:
+    - Local
     - Tool
   shortDescZh: 现代化、开源的 Linux 服务器运维管理面板
   shortDescEn: Modern and Open-Source Linux Server Operation and Management Panel

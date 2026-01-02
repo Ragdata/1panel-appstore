@@ -1,5 +1,6 @@
 name: Stash
 tags:
+  - Local
   - Media
 title: Media Management Tools
 description: Media Management Tools
@@ -7,6 +8,7 @@ additionalProperties:
   key: stash
   name: Stash
   tags:
+    - Local
     - Media
   shortDescZh: 媒体管理工具
   shortDescEn: Media Management Tools

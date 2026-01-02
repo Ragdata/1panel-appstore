@@ -1,5 +1,6 @@
 name: 1Panel-Tools
 tags:
+  - Local
   - Tool
   - DevTool
 title: 轻松将您的 Docker Compose 文件转换为 1Panel 应用商店格式
@@ -10,6 +11,7 @@ additionalProperties:
   key: 1panel-tools
   name: 1Panel-Tools
   tags:
+    - Local
     - Tool
     - DevTool
   shortDescZh: 轻松将您的 Docker Compose 文件转换为 1Panel 应用商店格式
