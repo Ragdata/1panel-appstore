@@ -1,8 +1,8 @@
 #!/bin/bash
 # Just run or copy this script to the 1Panel -> scheduled task to run it regularly
-if [ -f "./.env" ]; then
+if [ -f ".env" ]; then
 	set -o allexport
-	source "./.env"
+	source ".env"
 	set +o allexport
 fi
 # Directory of the local app (if not installed by default, you need to create it manually)
@@ -24,7 +24,7 @@ git_username="${GIT_USERNAME:-}"
 git_password="${GIT_PASSWORD:-}"
 
 # Specify the branch to clone (optional)
-git_branch="${GIT_BRANCH:-'master'}"
+git_branch="${GIT_BRANCH:-master}"
 # Specify the clone depth (optional, default is 1 for shallow clone)
 git_depth=${GIT_DEPTH:-1}
 
