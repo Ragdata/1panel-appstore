@@ -137,7 +137,11 @@ function clone_git_repo() {
     git clone "$branch" "$depth" "https://$encoded_username:$encoded_password@$fix_url"
   else
     echo "use default clone"
-    git clone "$branch" "$depth" "$url"
+    if [[ -n $branch ]] || [[ -n $depth ]]; then
+    	git clone "$branch" "$depth" "$url"
+    else
+    	git clone "$url"
+		fi
   fi
 }
 
