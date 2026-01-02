@@ -1,19 +1,12 @@
-<a name="top" href="https://github.com/Bubka/2FAuth" target="_blank"><img height="100" align="right" src="logo.png" alt="1Panel" /></a>
-
-![Docker Pulls Badge][docker-pulls-badge]
-![Docker Size Badge][docker-size-badge]
-![Docker Version Badge][docker-version-badge]
-![GitHub Issues Badge][github-issues-badge]
-![GitHub Last Commit Badge][github-last-commit-badge]
-![GitHub Stars Badge][github-stars-badge]
-
 # [2FAuth](https://github.com/Bubka/2FAuth)
 
 <div align="center">
 
 ### _A web app to manage your Two-Factor Authentication (2FA) accounts_
 
-### [DOCS](https://docs.2fauth.app/)&nbsp;&nbsp;🔸&nbsp;&nbsp;[GITHUB](https://github.com/Bubka/2FAuth)&nbsp;&nbsp;🔸&nbsp;&nbsp;[IMAGE](https://hub.docker.com/r/2fauth/2fauth)
+![][docker-pulls-badge] ![][docker-size-badge] ![][docker-version-badge] ![][github-issues-badge] ![][github-last-commit-badge]
+
+![][github-stars-badge]
 
 </div>
 
@@ -21,10 +14,10 @@
 
 2FAuth is a web based self-hosted alternative to One Time Passcode (OTP) generators like Google Authenticator, designed for both mobile and desktop.  It aims to ease you perform your 2FA authentication steps whatever the device you handle, with a clean and suitable interface.
 
-![2FAuth Mobile Screenshots](screenshot.png)
+![](https://cdn.jsdelivr.net/gh/Ragdata/1panel-appstore/apps/2fauth/screenshot.png)
 
-> [!NOTE]
 > [2FAuth Demo](https://demo.2fauth.app/)
+> 
 > Credentials: 
 > 	username: demo@2fauth.app
 > 	password: demo
@@ -65,7 +58,7 @@ Sensitive data stored in the database can be encrypted to protect them against d
 
 ## [License](#top) ⚖️
 
-[![AGPLv3 License][github-license-badge]][license-link]
+[![][github-license-badge]][license-link]
 
 [`^ Top`](#top)
 

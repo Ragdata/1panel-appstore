@@ -1,19 +1,12 @@
-<a name="top" href="https://github.com/arch3rPro/1Panel-Tools" target="_blank"><img height="100" align="right" src="logo.png" alt="1Panel" /></a>
-
-![Docker Pulls Badge][docker-pulls-badge]
-![Docker Size Badge][docker-size-badge]
-![Docker Version Badge][docker-version-badge]
-![GitHub Issues Badge][github-issues-badge]
-![GitHub Last Commit Badge][github-last-commit-badge]
-![GitHub Stars Badge][github-stars-badge]
-
 # [1Panel-Tools](https://github.com/arch3rPro/1Panel-Tools)
 
 <div align="center">
 
 ### _A specialized toolkit to simplify the packaging of apps for the 1Panel AppStore_
 
-### [GITHUB](https://github.com/arch3rPro/1Panel-Tools)&nbsp;&nbsp;🔸&nbsp;&nbsp;[IMAGE](https://hub.docker.com/r/vuldocker/1panel-tools)
+![][docker-pulls-badge] ![][docker-size-badge] ![][docker-version-badge] ![][github-issues-badge] ![][github-last-commit-badge]
+
+![][github-stars-badge]
 
 </div>
 
@@ -21,7 +14,7 @@
 
 1Panel-Tools is a specialized toolkit designed to simplify the process of creating applications for the 1Panel AppStore. The primary tool in this collection is the Docker Compose to 1Panel AppStore converter, which transforms standard Docker Compose files into the format required by the 1Panel AppStore.
 
-![1Panel-Tools](https://cdn.jsdelivr.net/gh/arch3rPro/1Panel-Tools@main/public/1Panel-Tools.png)
+![](https://cdn.jsdelivr.net/gh/arch3rPro/1Panel-Tools@main/public/1Panel-Tools.png) 
 
 [`^ Top`](#top)
 

@@ -1,19 +1,12 @@
-<a name="top" href="https://github.com/okxlin/docker-1panel" target="_blank"><img height="100" align="right" src="logo.png" alt="1Panel" /></a>
-
-![Docker Pulls Badge][docker-pulls-badge]
-![Docker Size Badge][docker-size-badge]
-![Docker Version Badge][docker-version-badge]
-![GitHub Issues Badge][github-issues-badge]
-![GitHub Last Commit Badge][github-last-commit-badge]
-![GitHub Stars Badge][github-stars-badge]
-
 # [1Panel (Docker Version)](https://github.com/okxlin/docker-1panel)
 
 <div align="center">
 
 ### _A new generation Linux server operation and maintenance management panel_
 
-### [SITE](https://1panel.pro/)&nbsp;&nbsp;🔸&nbsp;&nbsp;[DOCS](https://docs.1panel.pro/)&nbsp;&nbsp;🔸&nbsp;&nbsp;[GITHUB](https://github.com/okxlin/docker-1panel)&nbsp;&nbsp;🔸&nbsp;&nbsp;[IMAGE](https://hub.docker.com/r/moelin/1panel)
+![][docker-pulls-badge] ![][docker-size-badge] ![][docker-version-badge] ![][github-issues-badge] ![][github-last-commit-badge]
+
+![][github-stars-badge]
 
 </div>
 
@@ -27,13 +20,16 @@
 - **Safe & Reliable**：Manages and deploys applications in containers and includes firewall & other security measures
 - **1-Click Backup**：Supports 1-click backup and restore, allowing users to backup to various cloud storage media.
 
+<div align="center">
+
 1Panel 3-Minute Overview：https://www.youtube.com/watch?v=9d_uulrlg6M
+
+</div>
 
 [`^ Top`](#top)
 
 ## [Configuration](#top) 🚧
 
-> [!warning]
 > - Due to internal container limitations, some features are currently incomplete. (`systemd`)
 > - Instead of clicking on the lower-right corner of the containerized `1Panel` to update, you should pull the new image and redeploy it to apply the update.
 > - 20230919: Add an auto-modify panel to display the application version, eliminating the need to manually modify the database.
@@ -47,7 +43,6 @@
 
 ### [Adjustable Parameters](#top)
 
-> [!important]
 > It is recommended to use the `/opt` path for file storage, otherwise some applications may have exceptions when calling local files.
 
 - `/opt:opt` File storage mapping
@@ -87,6 +82,9 @@ docker run -d \
     -e TZ=Asia/Shanghai \
     moelin/1panel:latest
 ```
+
+[`^ Top`](#top)
+
 ## [Install with Docker-Compose](#top) 📃
 
 Create a `docker-compose.yml` file in the current directory and add the following content:
@@ -111,11 +109,13 @@ services:
 ```
 Then `docker-compose up -d`
 
+[`^ Top`](#top)
+
 ## [License](#top) ⚖️
 
-[![GPLv3 License][github-license-badge]][license-link]
+[![][github-license-badge]][license-link]
 
-Copyright (c) 2014-2023 [FIT2CLOUD 飞致云](https://fit2cloud.com/), All rights reserved.
+[`^ Top`](#top)
 
 [docker-pulls-badge]: https://img.shields.io/docker/pulls/moelin/1panel?labelColor=31383f
 [docker-size-badge]: https://img.shields.io/docker/image-size/moelin/1panel?labelColor=31383f
@@ -127,5 +127,3 @@ Copyright (c) 2014-2023 [FIT2CLOUD 飞致云](https://fit2cloud.com/), All right
 [github-license-badge]: https://img.shields.io/badge/License-GPLv3-blue?labelColor=31383f&style=flat-square
 
 [license-link]: https://choosealicense.com/licenses/gpl-3.0/
-
-[//]: # ([github-license-badge]: https://img.shields.io/github/license/okxlin/docker-1panel)

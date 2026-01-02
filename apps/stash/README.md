@@ -1,19 +1,12 @@
-<a name="top" href="https://github.com/stashapp/stash" target="_blank"><img height="100" align="right" src="logo.png" alt="1Panel" /></a>
-
-![Docker Pulls Badge][docker-pulls-badge]
-![Docker Size Badge][docker-size-badge]
-![Docker Version Badge][docker-version-badge]
-![GitHub Issues Badge][github-issues-badge]
-![GitHub Last Commit Badge][github-last-commit-badge]
-![GitHub Stars Badge][github-stars-badge]
-
 # [Stash](https://github.com/stashapp/stash)
 
 <div align="center">
 
 ### _A media management tool for your collection of video and image files_
 
-### [SITE](https://stashapp.cc/)&nbsp;&nbsp;🔸&nbsp;&nbsp;[DOCS](https://docs.stashapp.cc/)&nbsp;&nbsp;🔸&nbsp;&nbsp;[GITHUB](https://github.com/stashapp/stash)&nbsp;&nbsp;🔸&nbsp;&nbsp;[IMAGE](https://hub.docker.com/r/stashapp/stash)
+![][docker-pulls-badge] ![][docker-size-badge] ![][docker-version-badge] ![][github-issues-badge] ![][github-last-commit-badge]
+
+![][github-stars-badge]
 
 </div>
 
@@ -23,13 +16,13 @@ Stash is a self-hosted media management tool written in Go which organizes and s
 
 <br />
 
-![Stash Media Manager](screenshot.png)
+![](https://cdn.jsdelivr.net/gh/Ragdata/1panel-appstore/apps/stash/screenshot.png)
 
-<center>
+<div align="center">
 
 #### [Watch the SFW Demo Video](https://vimeo.com/545323354)
 
-</center>
+</div>
 
 ## [Features](#top) ✨
 
@@ -92,7 +85,7 @@ Stash can pull metadata (performers, tags, descriptions, studios, images, and mo
 
 ## [License](#top) ⚖️
 
-[![AGPLv3 License][github-license-badge]][license-link]
+[![][github-license-badge]][license-link]
 
 [`^ Top`](#top)
 
