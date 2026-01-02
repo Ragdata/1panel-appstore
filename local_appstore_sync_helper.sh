@@ -202,8 +202,8 @@ function main() {
   if [[ $git_repo_url =~ .*\/(.*)\/(.*)\.git ]]; then
     repo_username=${BASH_REMATCH[1]}
     repo_projectname=${BASH_REMATCH[2]}
-    # logs "username: $repo_username"
-    # logs "project name: $repo_projectname"
+    logs "username: $repo_username"
+    logs "project name: $repo_projectname"
   fi
 
   if [ -z "$repo_username" ] || [ -z "$repo_projectname" ]; then
