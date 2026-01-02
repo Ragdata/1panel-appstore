@@ -29,9 +29,9 @@ git_branch="${GIT_BRANCH:-master}"
 git_depth=${GIT_DEPTH:-1}
 
 # Whether to empty the local app directory before pulling the remote repository (optional)
-clean_local_app=false
+clean_local_app=true
 # Whether to empty the remote app cache data after pulling (optional)
-clean_remote_app_cache=false
+clean_remote_app_cache=true
 
 # Setup an agent to use when pulling the remote repository (optional)
 proxyUrl=${PROXY_URL:-}
