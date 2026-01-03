@@ -1,0 +1,24 @@
+name: Zabbix-Agent2
+tags:
+  - Local
+  - Tool
+title: Real-Time Monitoring of IT Components and Services
+description: Real-Time Monitoring of IT Components and Services
+additionalProperties:
+  key: zabbix-agent2
+  name: Zabbix-Agent2
+  tags:
+    - Local
+    - Tool
+  shortDescZh: 实时监控 IT 组件和服务(监控端)
+  shortDescEn: Real-time monitoring of IT components and services (Agent)
+  description:
+    en: Real-time monitoring of IT components and services (Agent)
+    zh: 实时监控 IT 组件和服务(监控端)
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://www.zabbix.com/
+  github: https://github.com/zabbix/zabbix
+  document: https://www.zabbix.com/manuals

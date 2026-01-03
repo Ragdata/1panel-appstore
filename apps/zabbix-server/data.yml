@@ -1,0 +1,24 @@
+name: Zabbix-Server
+tags:
+  - Local
+  - Tool
+title: Real-Time Monitoring of IT Components and Services
+description: Real-Time Monitoring of IT Components and Services
+additionalProperties:
+  key: zabbix-server
+  name: Zabbix-Server
+  tags:
+    - Local
+    - Tool
+  shortDescZh: 实时监控 IT 组件和服务(服务端)
+  shortDescEn: Real-time monitoring of IT components and services (Server)
+  description:
+    en: Real-time monitoring of IT components and services (Server)
+    zh: 实时监控 IT 组件和服务(服务端)
+  type: tool
+  crossVersionUpdate: true
+  limit: 1
+  recommend: 0
+  website: https://www.zabbix.com/
+  github: https://github.com/zabbix/zabbix
+  document: https://www.zabbix.com/manuals
