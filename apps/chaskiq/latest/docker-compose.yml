@@ -1,0 +1,151 @@
+services:
+  chaskiq-frontend:
+    container_name: chaskiq-frontend-${CONTAINER}
+    image: chaskiq/chaskiq:latest
+    restart: always
+    depends_on:
+      - chaskiq-postgres
+      - chaskiq-redis
+    networks:
+      - 1panel-network
+      - 1panel-internal
+    entrypoint: /app/docker-entrypoint.sh
+    volumes:
+      - ${CHASKIQ_PATH}/docker-entrypoint.sh:/app/docker-entrypoint.sh
+    environment:
+      HOST: ${HOST}
+      WS: ${WS}
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      DB_HOST: ${DB_HOST}
+      DB_PORT: ${DB_PORT}
+      DATABASE_URL: postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${DB_HOST}:${DB_PORT}/${POSTGRES_DB}
+      REDIS_HOST: ${REDIS_HOST}
+      REDIS_PORT: ${REDIS_PORT}
+      REDIS_URL: redis://${REDIS_HOST}:${REDIS_PORT}
+      APP_ENV: production
+      RAILS_ENV: production
+      RACK_ENV: production
+      RAILS_SERVE_STATIC_FILES: true
+      SECRET_KEY_BASE: ${SECRET_KEY_BASE}
+      RAILS_LOG_TO_STDOUT: false
+      LOCAL_STORAGE_PATH: ${LOCAL_STORAGE_PATH}
+      ACTIVE_STORAGE_SERVICE: local
+      AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
+      AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
+      AWS_S3_REGION: ${AWS_S3_REGION}
+      AWS_S3_BUCKET: ${AWS_S3_BUCKET}
+      SES_ADDRESS: ${SES_ADDRESS}
+      SES_USER_NAME: ${SES_USER_NAME}
+      SES_PASSWORD: ${SES_PASSWORD}
+      SNS_CONFIGURATION_SET: metrics
+      DEFAULT_SENDER_EMAIL: ${DEFAULT_SENDER_EMAIL}
+      DEFAULT_OUTGOING_EMAIL_DOMAIN: ${DEFAULT_OUTGOING_EMAIL_DOMAIN}
+      BUGSNAG_API_KEY: ${BUGSNAG_API_KEY}
+      SMTP_DELIVERY_METHOD: ${SMTP_DELIVERY_METHOD}
+      SMTP_ADDRESS: ${SMTP_ADDRESS}
+      SMTP_USERNAME: ${SMTP_USERNAME}
+      SMTP_PASSWORD: ${SMTP_PASSWORD}
+      ENABLED_AUDITS: ${ENABLED_AUDITS}
+      CHASKIQ_APPSTORE_TOKEN: ${CHASKIQ_APPSTORE_TOKEN}
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:3000
+    labels:
+      createdBy: "Apps"
+
+  chaskiq-sidekiq:
+    image: chaskiq/chaskiq:latest
+    container_name: chaskiq-sidekiq-${CONTAINER}
+    restart: always
+    depends_on:
+      - chaskiq-frontend
+      - chaskiq-postgres
+      - chaskiq-redis
+    networks:
+      - 1panel-network
+      - 1panel-internal
+    command: bundle exec sidekiq -C config/sidekiq.yml
+    environment:
+      HOST: ${HOST}
+      WS: ${WS}
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      DB_HOST: ${DB_HOST}
+      DB_PORT: ${DB_PORT}
+      DATABASE_URL: postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${DB_HOST}:${DB_PORT}/${POSTGRES_DB}
+      REDIS_HOST: ${REDIS_HOST}
+      REDIS_PORT: ${REDIS_PORT}
+      REDIS_URL: redis://${REDIS_HOST}:${REDIS_PORT}
+      APP_ENV: production
+      RAILS_ENV: production
+      RACK_ENV: production
+      RAILS_SERVE_STATIC_FILES: true
+      SECRET_KEY_BASE: ${SECRET_KEY_BASE}
+      RAILS_LOG_TO_STDOUT: false
+      LOCAL_STORAGE_PATH: ${LOCAL_STORAGE_PATH}
+      ACTIVE_STORAGE_SERVICE: local
+      AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
+      AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
+      AWS_S3_REGION: ${AWS_S3_REGION}
+      AWS_S3_BUCKET: ${AWS_S3_BUCKET}
+      SES_ADDRESS: ${SES_ADDRESS}
+      SES_USER_NAME: ${SES_USER_NAME}
+      SES_PASSWORD: ${SES_PASSWORD}
+      SNS_CONFIGURATION_SET: metrics
+      DEFAULT_SENDER_EMAIL: ${DEFAULT_SENDER_EMAIL}
+      DEFAULT_OUTGOING_EMAIL_DOMAIN: ${DEFAULT_OUTGOING_EMAIL_DOMAIN}
+      BUGSNAG_API_KEY: ${BUGSNAG_API_KEY}
+      SMTP_DELIVERY_METHOD: ${SMTP_DELIVERY_METHOD}
+      SMTP_ADDRESS: ${SMTP_ADDRESS}
+      SMTP_USERNAME: ${SMTP_USERNAME}
+      SMTP_PASSWORD: ${SMTP_PASSWORD}
+      ENABLED_AUDITS: ${ENABLED_AUDITS}
+      CHASKIQ_APPSTORE_TOKEN: ${CHASKIQ_APPSTORE_TOKEN}
+    labels:
+      createdBy: "Apps"
+
+  chaskiq-postgres:
+    image: postgres:14-alpine
+    container_name: chaskiq-postgres-${CONTAINER}
+    restart: always
+    networks:
+      - 1panel-internal
+    volumes:
+      - chaskiq-postgres:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_INITDB_ARGS: "--data-checksums"
+      PSQL_HISTFILE: "/root/log/.psql_history"
+    ports:
+      - ${DB_PORT}
+    healthcheck:
+      test: pg_isready -U ${POSTGRES_USER} -p ${DB_PORT} -h ${DB_HOST}
+      interval: 2s
+    labels:
+      createdBy: "Apps"
+
+  chaskiq-redis:
+    image: redis:5-alpine
+    container_name: chaskiq-redis-${CONTAINER}
+    restart: always
+    networks:
+      - 1panel-internal
+    volumes:
+      - chaskiq-redis:/data
+    ports:
+      - ${REDIS_PORT}
+    healthcheck:
+      test: redis-cli ping
+      interval: 1s
+      timeout: 3s
+      retries: 30
+    labels:
+      createdBy: "Apps"

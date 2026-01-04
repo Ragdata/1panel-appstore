@@ -56,6 +56,8 @@ Sensitive data stored in the database can be encrypted to protect them against d
 
 2FAuth generates OTP according to RFC 4226 (HOTP Algorithm) and RFC 6238 (TOTP Algorithm)
 
+[`^ Top`](#top)
+
 ## [License](#top) ⚖️
 
 [![][github-license-badge]][license-link]

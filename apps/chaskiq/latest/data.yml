@@ -1,0 +1,297 @@
+additionalProperties:
+  formFields:
+    - default: "http://0.0.0.0:3000"
+      edit: true
+      envKey: HOST
+      labelEn: Service URL
+      labelZh:
+      label:
+        en: Service URL
+        zh:
+      required: true
+      type: text
+    - default: "ws://0.0.0.0:3000/cable"
+      edit: true
+      envKey: WS
+      labelEn: Websocket URL
+      labelZh:
+      label:
+        en: Websocket URL
+        zh:
+      required: true
+      type: text
+    - default: "admin@example.com"
+      edit: true
+      envKey: ADMIN_EMAIL
+      labelEn: Admin Email
+      labelZh:
+      label:
+        en: Admin Email
+        zh:
+      required: true
+      type: text
+    - default: ""
+      edit: true
+      envKey: ADMIN_PASSWORD
+      labelEn: Admin Password
+      labelZh:
+      label:
+        en: Admin Password
+        zh:
+      required: true
+      type: text
+    - default: "chaskiq"
+      edit: true
+      envKey: POSTGRES_DB
+      labelEn: Database Name
+      labelZh:
+      label:
+        en: Database Name
+        zh:
+      required: true
+      type: text
+    - default: "postgres"
+      edit: true
+      envKey: POSTGRES_USER
+      labelEn: Database User
+      labelZh:
+      label:
+        en: Database User
+        zh:
+      required: true
+      type: text
+    - default: ""
+      edit: true
+      envKey: POSTGRES_PASSWORD
+      labelEn: Database Password
+      labelZh:
+      label:
+        en: Database Password
+        zh:
+      required: true
+      type: text
+    - default: "chaskiq-postgres"
+      edit: true
+      envKey: DB_HOST
+      labelEn: Database Host
+      labelZh:
+      label:
+        en: Database Host
+        zh:
+      required: true
+      type: text
+    - default: "5432"
+      edit: true
+      envKey: DB_PORT
+      labelEn: Database Port
+      labelZh:
+      label:
+        en: Database Port
+        zh:
+      required: true
+      type: text
+    - default: "chaskiq-redis"
+      edit: true
+      envKey: REDIS_HOST
+      labelEn: Redis Host
+      labelZh:
+      label:
+        en: Redis Host
+        zh:
+      required: true
+      type: text
+    - default: "6379"
+      edit: true
+      envKey: REDIS_PORT
+      labelEn: Redis Port
+      labelZh:
+      label:
+        en: Redis Port
+        zh:
+      required: true
+      type: text
+    - default: ""
+      edit: true
+      envKey: SECRET_KEY_BASE
+      labelEn: Secret Key Base
+      labelZh:
+      label:
+        en: Secret Key Base
+        zh:
+      required: true
+      type: text
+    - default: "./data/storage"
+      edit: true
+      envKey: LOCAL_STORAGE_PATH
+      labelEn: Local Storage Path
+      labelZh:
+      label:
+        en: Local Storage Path
+        zh:
+      required: true
+      type: text
+    - default: ""
+      edit: true
+      envKey: AWS_ACCESS_KEY_ID
+      labelEn: AWS Access Key ID
+      labelZh:
+      label:
+        en: AWS Access Key ID
+        zh:
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: AWS_SECRET_ACCESS_KEY
+      labelEn: AWS Secret Access Key
+      labelZh:
+      label:
+        en: AWS Secret Access Key
+        zh:
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: AWS_S3_REGION
+      labelEn: AWS S3 Region
+      labelZh:
+      label:
+        en: AWS S3 Region
+        zh:
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: AWS_S3_BUCKET
+      labelEn: AWS S3 Bucket
+      labelZh:
+      label:
+        en: AWS S3 Bucket
+        zh:
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: SES_ADDRESS
+      labelEn: Amazon SES Address
+      labelZh:
+      label:
+        en: Amazon SES Address
+        zh:
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: SES_USER_NAME
+      labelEn: Amazon SES Username
+      labelZh:
+      label:
+        en: Amazon SES Username
+        zh:
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: SES_PASSWORD
+      labelEn: Amazon SES Password
+      labelZh:
+      label:
+        en: Amazon SES Password
+        zh:
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: DEFAULT_SENDER_EMAIL
+      labelEn: Default Sender Email
+      labelZh:
+      label:
+        en: Default Sender Email
+        zh:
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: DEFAULT_OUTGOING_EMAIL_DOMAIN
+      labelEn: Default Outgoing Email Domain
+      labelZh:
+      label:
+        en: Default Outgoing Email Domain
+        zh:
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: BUGSNAG_API_KEY
+      labelEn: Bugsnag API Key
+      labelZh:
+      label:
+        en: Bugsnag API Key
+        zh:
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: SMTP_DELIVERY_METHOD
+      labelEn: SMTP Delivery Method
+      labelZh:
+      label:
+        en: SMTP Delivery Method
+        zh:
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: SMTP_ADDRESS
+      labelEn: SMTP Address
+      labelZh:
+      label:
+        en: SMTP Address
+        zh:
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: SMTP_USERNAME
+      labelEn: SMTP Username
+      labelZh:
+      label:
+        en: SMTP Username
+        zh:
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: SMTP_PASSWORD
+      labelEn: SMTP Password
+      labelZh:
+      label:
+        en: SMTP Password
+        zh:
+      required: false
+      type: text
+    - default: "true"
+      edit: true
+      envKey: ENABLED_AUDITS
+      labelEn: Enable Audits
+      labelZh:
+      label:
+        en: Enable Audits
+        zh:
+      required: true
+      type: select
+      values:
+        - label: "true"
+          value: "true"
+        - label: "false"
+          value: "false"
+    - default: ""
+      edit: true
+      envKey: CHASKIQ_APPSTORE_TOKEN
+      labelEn: Appstore Token
+      labelZh:
+      label:
+        en: Appstore Token
+        zh:
+      required: false
+      type: text

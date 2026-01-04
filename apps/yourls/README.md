@@ -8,7 +8,7 @@
 
 ![][docker-pulls-badge] ![][docker-size-badge] ![][docker-version-badge] ![][github-issues-badge] ![][github-last-commit-badge]
 
-![](https://github.com/YOURLS/YOURLS/workflows/CI/badge.svg) [![](https://scrutinizer-ci.com/g/YOURLS/YOURLS/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/YOURLS/YOURLS/?branch=master) ![](https://img.shields.io/packagist/php-v/yourls/yourls) [![](https://img.shields.io/packagist/v/yourls/yourls.svg)](https://packagist.org/packages/yourls/yourls) [![](https://opencollective.com/yourls/backers/badge.svg)](https://opencollective.com/yourls#contributors) [![](https://opencollective.com/yourls/sponsors/badge.svg)](#sponsors)
+![](https://github.com/YOURLS/YOURLS/workflows/CI/badge.svg) [![](https://scrutinizer-ci.com/g/YOURLS/YOURLS/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/YOURLS/YOURLS/?branch=master) ![](https://img.shields.io/packagist/php-v/yourls/yourls) [![](https://img.shields.io/packagist/v/yourls/yourls.svg)](https://packagist.org/packages/yourls/yourls) [![](https://opencollective.com/yourls/backers/badge.svg)](https://opencollective.com/yourls#contributors) ![](https://opencollective.com/yourls/sponsors/badge.svg)
 
 ![][github-stars-badge]
 
@@ -27,7 +27,7 @@ YOURLS is a free and open-source PHP application that allows you to run **Y**our
 - **FOSS** - Free and open-source software.  No strings attached.  Full control over your data, on your own domain.
 <br /><br />
 - **Powerful Features** - Bookmarklets, developer API, and awesome stats with historical click reports, referrer tracking, and visitor geo-location.
-	<br /><br />
+<br /><br />
 - **Extensible** - Terrific plugin architecture and dozens of plugins to easily implement new features.  Make YOURLS work exactly the way you need.  Endless possibilities.
 
 [`^ Top`](#top)

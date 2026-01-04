@@ -1,0 +1,24 @@
+name: Chaskiq
+tags:
+  - Local
+  - Tool
+title: The front line of your customer experience
+description: The front line of your customer experience
+additionalProperties:
+  key: chaskiq
+  name: Chaskiq
+  tags:
+    - Local
+    - Tool
+  shortDescZh: 您的客户体验前线
+  shortDescEn: The front line of your customer experience
+  description:
+    en: The front line of your customer experience
+    zh: 您的客户体验前线
+  type: tool
+  crossVersionUpdate: true
+  limit: 1
+  recommend: 0
+  website: https://chaskiq.io
+  github: https://github.com/chaskiq/chaskiq
+  document: https://dev.chaskiq.io/
