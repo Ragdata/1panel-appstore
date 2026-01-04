@@ -1,0 +1,24 @@
+name: YOURLS
+tags:
+  - Local
+  - Tool
+title: Self-Hosted URL Shortener (PHP)
+description: Self-Hosted URL Shortener (PHP)
+additionalProperties:
+  key: yourls
+  name: YOURLS
+  tags:
+    - Local
+    - Tool
+  shortDescZh: PHP驱动的标准自托管URL缩短器
+  shortDescEn: The de facto standard self hosted URL shortener in PHP
+  description:
+    en: The de facto standard self hosted URL shortener in PHP
+    zh: PHP驱动的标准自托管URL缩短器
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://yourls.org/
+  github: https://github.com/YOURLS/YOURLS
+  document: https://yourls.org/docs
