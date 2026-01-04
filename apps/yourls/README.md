@@ -8,8 +8,7 @@
 
 ![][docker-pulls-badge] ![][docker-size-badge] ![][docker-version-badge] ![][github-issues-badge] ![][github-last-commit-badge]
 
-![CI](https://github.com/YOURLS/YOURLS/workflows/CI/badge.svg) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/YOURLS/YOURLS/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/YOURLS/YOURLS/?branch=master) ![PHP Version Support](https://img.shields.io/packagist/php-v/yourls/yourls) [![Packagist](https://img.shields.io/packagist/v/yourls/yourls.svg)](https://packagist.org/packages/yourls/yourls) [![OpenCollective](https://opencollective.com/yourls/backers/badge.svg)](https://opencollective.com/yourls#contributors)
-[![OpenCollective](https://opencollective.com/yourls/sponsors/badge.svg)](#sponsors)
+![](https://github.com/YOURLS/YOURLS/workflows/CI/badge.svg) [![](https://scrutinizer-ci.com/g/YOURLS/YOURLS/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/YOURLS/YOURLS/?branch=master) ![](https://img.shields.io/packagist/php-v/yourls/yourls) [![](https://img.shields.io/packagist/v/yourls/yourls.svg)](https://packagist.org/packages/yourls/yourls) [![](https://opencollective.com/yourls/backers/badge.svg)](https://opencollective.com/yourls#contributors) [![](https://opencollective.com/yourls/sponsors/badge.svg)](#sponsors)
 
 ![][github-stars-badge]
 
