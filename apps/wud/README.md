@@ -40,6 +40,12 @@ OR you can use the online tool to generate it at https://htpasswd.utils.com/
 
 [`^ Top`](#top)
 
+## [License](#top) ⚖️
+
+[![][github-license-badge]][license-link]
+
+[`^ Top`](#top)
+
 [docker-pulls-badge]: https://img.shields.io/docker/pulls/getwud/wud?labelColor=31383f
 [docker-size-badge]: https://img.shields.io/docker/image-size/getwud/wud?labelColor=31383f
 [docker-stars-badge]: https://img.shields.io/docker/stars/getwud/wud?style=social
