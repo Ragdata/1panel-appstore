@@ -120,7 +120,7 @@ additionalProperties:
         zh:
       required: true
       type: text
-    - default: "./data/storage"
+    - default: "./data"
       edit: true
       envKey: LOCAL_STORAGE_PATH
       labelEn: Local Storage Path
@@ -239,7 +239,14 @@ additionalProperties:
         en: SMTP Delivery Method
         zh:
       required: false
-      type: text
+      type: select
+      values:
+        - label: "---"
+          value: ""
+        - label: "SMTP"
+          value: "smtp"
+        - label: "SES"
+          value: "ses"
     - default: ""
       edit: true
       envKey: SMTP_ADDRESS
@@ -295,3 +302,18 @@ additionalProperties:
         zh:
       required: false
       type: text
+    - default: "false"
+      edit: true
+      envKey: DISABLE_APP_CREATION
+      labelEn: Disable App Creation
+      labelZh:
+      label:
+        en: Disable App Creation
+        zh:
+      required: true
+      type: select
+      values:
+        - label: "true"
+          value: "true"
+        - label: "false"
+          value: "false"

@@ -65,7 +65,6 @@ services:
       - chaskiq-postgres
       - chaskiq-redis
     networks:
-      - 1panel-network
       - 1panel-internal
     command: bundle exec sidekiq -C config/sidekiq.yml
     environment:
@@ -107,6 +106,7 @@ services:
       SMTP_PASSWORD: ${SMTP_PASSWORD}
       ENABLED_AUDITS: ${ENABLED_AUDITS}
       CHASKIQ_APPSTORE_TOKEN: ${CHASKIQ_APPSTORE_TOKEN}
+      DISABLE_APP_CREATION: ${DISABLE_APP_CREATION}
     labels:
       createdBy: "Apps"
 
