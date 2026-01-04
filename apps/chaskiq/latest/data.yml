@@ -4,240 +4,240 @@ additionalProperties:
       edit: true
       envKey: HOST
       labelEn: Service URL
-      labelZh:
+      labelZh: 服务网址
       label:
         en: Service URL
-        zh:
+        zh: 服务网址
       required: true
       type: text
     - default: "ws://0.0.0.0:3000/cable"
       edit: true
       envKey: WS
       labelEn: Websocket URL
-      labelZh:
+      labelZh: 网络套接字网址
       label:
         en: Websocket URL
-        zh:
+        zh: 网络套接字网址
       required: true
       type: text
     - default: "admin@example.com"
       edit: true
       envKey: ADMIN_EMAIL
       labelEn: Admin Email
-      labelZh:
+      labelZh: 管理员邮箱
       label:
         en: Admin Email
-        zh:
+        zh: 管理员邮箱
       required: true
       type: text
     - default: ""
       edit: true
       envKey: ADMIN_PASSWORD
       labelEn: Admin Password
-      labelZh:
+      labelZh: 管理员密码
       label:
         en: Admin Password
-        zh:
+        zh: 管理员密码
       required: true
       type: text
     - default: "chaskiq"
       edit: true
       envKey: POSTGRES_DB
       labelEn: Database Name
-      labelZh:
+      labelZh: 数据库名称
       label:
         en: Database Name
-        zh:
+        zh: 数据库名称
       required: true
       type: text
     - default: "postgres"
       edit: true
       envKey: POSTGRES_USER
       labelEn: Database User
-      labelZh:
+      labelZh: 数据库用户
       label:
         en: Database User
-        zh:
+        zh: 数据库用户
       required: true
       type: text
     - default: ""
       edit: true
       envKey: POSTGRES_PASSWORD
       labelEn: Database Password
-      labelZh:
+      labelZh: 数据库密码
       label:
         en: Database Password
-        zh:
+        zh: 数据库密码
       required: true
       type: text
     - default: "chaskiq-postgres"
       edit: true
       envKey: DB_HOST
       labelEn: Database Host
-      labelZh:
+      labelZh: 数据库主机
       label:
         en: Database Host
-        zh:
+        zh: 数据库主机
       required: true
       type: text
     - default: "5432"
       edit: true
       envKey: DB_PORT
       labelEn: Database Port
-      labelZh:
+      labelZh: 数据库端口
       label:
         en: Database Port
-        zh:
+        zh: 数据库端口
       required: true
       type: text
     - default: "chaskiq-redis"
       edit: true
       envKey: REDIS_HOST
       labelEn: Redis Host
-      labelZh:
+      labelZh: 雷迪斯
       label:
         en: Redis Host
-        zh:
+        zh: 雷迪斯
       required: true
       type: text
     - default: "6379"
       edit: true
       envKey: REDIS_PORT
       labelEn: Redis Port
-      labelZh:
+      labelZh: 雷迪斯端口
       label:
         en: Redis Port
-        zh:
+        zh: 雷迪斯端口
       required: true
       type: text
     - default: ""
       edit: true
       envKey: SECRET_KEY_BASE
       labelEn: Secret Key Base
-      labelZh:
+      labelZh: 秘密密钥基础
       label:
         en: Secret Key Base
-        zh:
+        zh: 秘密密钥基础
       required: true
       type: text
     - default: "./data"
       edit: true
       envKey: LOCAL_STORAGE_PATH
       labelEn: Local Storage Path
-      labelZh:
+      labelZh: 本地存储路径
       label:
         en: Local Storage Path
-        zh:
+        zh: 本地存储路径
       required: true
       type: text
     - default: ""
       edit: true
       envKey: AWS_ACCESS_KEY_ID
       labelEn: AWS Access Key ID
-      labelZh:
+      labelZh: AWS访问密钥ID
       label:
         en: AWS Access Key ID
-        zh:
+        zh: AWS访问密钥ID
       required: false
       type: text
     - default: ""
       edit: true
       envKey: AWS_SECRET_ACCESS_KEY
       labelEn: AWS Secret Access Key
-      labelZh:
+      labelZh: AWS访问密钥
       label:
         en: AWS Secret Access Key
-        zh:
+        zh: AWS访问密钥
       required: false
       type: text
     - default: ""
       edit: true
       envKey: AWS_S3_REGION
       labelEn: AWS S3 Region
-      labelZh:
+      labelZh: AWS S3 区域
       label:
         en: AWS S3 Region
-        zh:
+        zh: AWS S3 区域
       required: false
       type: text
     - default: ""
       edit: true
       envKey: AWS_S3_BUCKET
       labelEn: AWS S3 Bucket
-      labelZh:
+      labelZh: AWS S3 桶
       label:
         en: AWS S3 Bucket
-        zh:
+        zh: AWS S3 桶
       required: false
       type: text
     - default: ""
       edit: true
       envKey: SES_ADDRESS
       labelEn: Amazon SES Address
-      labelZh:
+      labelZh: 亚马逊SES地址
       label:
         en: Amazon SES Address
-        zh:
+        zh: 亚马逊SES地址
       required: false
       type: text
     - default: ""
       edit: true
       envKey: SES_USER_NAME
       labelEn: Amazon SES Username
-      labelZh:
+      labelZh: 亚马逊SES用户名
       label:
         en: Amazon SES Username
-        zh:
+        zh: 亚马逊SES用户名
       required: false
       type: text
     - default: ""
       edit: true
       envKey: SES_PASSWORD
       labelEn: Amazon SES Password
-      labelZh:
+      labelZh: 亚马逊SES密码
       label:
         en: Amazon SES Password
-        zh:
+        zh: 亚马逊SES密码
       required: false
       type: text
     - default: ""
       edit: true
       envKey: DEFAULT_SENDER_EMAIL
       labelEn: Default Sender Email
-      labelZh:
+      labelZh: 默认发件人电子邮件
       label:
         en: Default Sender Email
-        zh:
+        zh: 默认发件人电子邮件
       required: false
       type: text
     - default: ""
       edit: true
       envKey: DEFAULT_OUTGOING_EMAIL_DOMAIN
       labelEn: Default Outgoing Email Domain
-      labelZh:
+      labelZh: 默认发件人电子邮件域
       label:
         en: Default Outgoing Email Domain
-        zh:
+        zh: 默认发件人电子邮件域
       required: false
       type: text
     - default: ""
       edit: true
       envKey: BUGSNAG_API_KEY
       labelEn: Bugsnag API Key
-      labelZh:
+      labelZh: Bugsnag API密钥
       label:
         en: Bugsnag API Key
-        zh:
+        zh: Bugsnag API密钥
       required: false
       type: text
     - default: ""
       edit: true
       envKey: SMTP_DELIVERY_METHOD
       labelEn: SMTP Delivery Method
-      labelZh:
+      labelZh: SMTP交付方法
       label:
         en: SMTP Delivery Method
-        zh:
+        zh: SMTP交付方法
       required: false
       type: select
       values:
@@ -251,40 +251,40 @@ additionalProperties:
       edit: true
       envKey: SMTP_ADDRESS
       labelEn: SMTP Address
-      labelZh:
+      labelZh: SMTP地址
       label:
         en: SMTP Address
-        zh:
+        zh: SMTP地址
       required: false
       type: text
     - default: ""
       edit: true
       envKey: SMTP_USERNAME
       labelEn: SMTP Username
-      labelZh:
+      labelZh: SMTP用户名
       label:
         en: SMTP Username
-        zh:
+        zh: SMTP用户名
       required: false
       type: text
     - default: ""
       edit: true
       envKey: SMTP_PASSWORD
       labelEn: SMTP Password
-      labelZh:
+      labelZh: SMTP密码
       label:
         en: SMTP Password
-        zh:
+        zh: SMTP密码
       required: false
       type: text
     - default: "true"
       edit: true
       envKey: ENABLED_AUDITS
       labelEn: Enable Audits
-      labelZh:
+      labelZh: 启用审核
       label:
         en: Enable Audits
-        zh:
+        zh: 启用审核
       required: true
       type: select
       values:
@@ -296,20 +296,20 @@ additionalProperties:
       edit: true
       envKey: CHASKIQ_APPSTORE_TOKEN
       labelEn: Appstore Token
-      labelZh:
+      labelZh: Appstore令牌
       label:
         en: Appstore Token
-        zh:
+        zh: Appstore令牌
       required: false
       type: text
     - default: "false"
       edit: true
       envKey: DISABLE_APP_CREATION
       labelEn: Disable App Creation
-      labelZh:
+      labelZh: 禁用应用程序创建
       label:
         en: Disable App Creation
-        zh:
+        zh: 禁用应用程序创建
       required: true
       type: select
       values:
