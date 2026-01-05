@@ -1,7 +1,7 @@
 <div align="center">
 
   <a href="https://yourls.org">
-    <img src="https://cdn.jsdelivr.net/gh/Ragdata/1panel-appstore/apps/vert-vertd/logo.png" width=66% alt="VERT">
+    <img src="https://cdn.jsdelivr.net/gh/Ragdata/1panel-appstore/apps/vert-vertd/banner.svg" width=66% alt="VERT">
   </a>
 
 ### _The file converter you'll love PLUS video converter_
