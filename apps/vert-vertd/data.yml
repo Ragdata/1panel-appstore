@@ -1,0 +1,24 @@
+name: Vert + Vertd
+tags:
+  - Local
+  - Tool
+title: Vert and Vertd, implementing the file conversion service
+description: Local deployment of Vert and Vertd, implementing file conversion service
+additionalProperties:
+  key:
+  name:
+  tags:
+    - Local
+    - Tool
+  shortDescZh: 本地化部署 Vert 和 Vertd，实现文件转换服务
+  shortDescEn: Local deployment of Vert and Vertd, implementing file conversion service
+  description:
+    en: Local deployment of Vert and Vertd, implementing file conversion service
+    zh: 本地化部署 Vert 和 Vertd，实现文件转换服务
+  type: tool
+  crossVersionUpdate: true
+  limit: 0
+  recommend: 0
+  website: https://vert.sh/
+  github: https://github.com/VERT-sh/VERT
+  document: https://github.com/VERT-sh/VERT/blob/main/docs/VIDEO_CONVERSION.md

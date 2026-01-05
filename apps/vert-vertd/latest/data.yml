@@ -1,0 +1,85 @@
+additionalProperties:
+  formFields:
+    - default: "30000"
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Service Port
+      labelZh: 服务端口
+      label:
+        en: Service Port
+        zh: 服务端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "24153"
+      edit: true
+      envKey: PORT_D
+      labelEn: Daemon Port
+      labelZh: 守护进程端口
+      label:
+        en: Daemon Port
+        zh: 守护进程端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: "vert"
+      edit: true
+      envKey: PUB_HOSTNAME
+      labelEn: Public Hostname
+      labelZh: 公共主机名
+      label:
+        en: Public Hostname
+        zh: 公共主机名
+      required: true
+      rule: paramHostname
+      type: text
+    - default: "http://vert:30000"
+      edit: true
+      envKey: PUB_VERT_URL
+      labelEn: Public Vert URL
+      labelZh: 公共 Vert URL
+      label:
+        en: Public Vert URL
+        zh: 公共 Vert URL
+      required: true
+      type: text
+    - default: "http://vertd:24153"
+      edit: true
+      envKey: PUB_VERTD_URL
+      labelEn: Public Vertd URL
+      labelZh: 公共 Vertd URL
+      label:
+        en: Public Vertd URL
+        zh: 公共 Vertd URL
+      required: true
+      type: text
+    - default: ""
+      edit: true
+      envKey: WEBHOOK_URL
+      labelEn: Discord Webhook URL
+      labelZh: Discord Webhook URL
+      label:
+        en: Discord Webhook URL
+        zh: Discord Webhook URL
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: WEBHOOK_PINGS
+      labelEn: Discord Webhook Pings
+      labelZh: Discord Webhook Pings
+      label:
+        en: Discord Webhook Pings
+        zh: Discord Webhook Pings
+      required: false
+      type: text
+    - default: ""
+      edit: true
+      envKey: ADMIN_PASSWORD
+      labelEn: Admin Password
+      labelZh: 管理员密码
+      label:
+        en: Admin Password
+        zh: 管理员密码
+      required: true
+      type: text
