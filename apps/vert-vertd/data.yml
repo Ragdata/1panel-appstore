@@ -3,17 +3,17 @@ tags:
   - Local
   - Tool
 title: Vert and Vertd, implementing the file conversion service
-description: Local deployment of Vert and Vertd, implementing file conversion service
+description: Vert and Vertd, implementing file conversion service
 additionalProperties:
-  key:
-  name:
+  key: vert
+  name: VERT
   tags:
     - Local
     - Tool
   shortDescZh: 本地化部署 Vert 和 Vertd，实现文件转换服务
-  shortDescEn: Local deployment of Vert and Vertd, implementing file conversion service
+  shortDescEn: Vert and Vertd, implementing file conversion service
   description:
-    en: Local deployment of Vert and Vertd, implementing file conversion service
+    en: Vert and Vertd, implementing file conversion service
     zh: 本地化部署 Vert 和 Vertd，实现文件转换服务
   type: tool
   crossVersionUpdate: true
